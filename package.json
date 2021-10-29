@@ -1,0 +1,28 @@
+{
+	"name": "app-simple",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"engines": {
+		"node": "14.x"
+	},
+	"scripts": {
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ProfBenjaminTardif/app-simple.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ProfBenjaminTardif/app-simple/issues"
+	},
+	"homepage": "https://github.com/ProfBenjaminTardif/app-simple#readme",
+	"dependencies": {
+		"eta": "^1.12.3",
+		"express": "^4.17.1",
+		"mongodb": "^4.1.3"
+	}
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head> </head>
+
+	<body>
+		<h1>this is BenIndex.eta</h1>
+
+		<p><%= `it = ${it}` %></p>
+		<p><%= `it.visible = ${it.visible}` %></p>
+		<p><%= `it.name = ${it.name}` %></p>
+
+		<% if (it.visible === true) { %>
+		<h2><%= "VISIBLE" %></h2>
+		<% } else { %>
+		<h2><%= "NOT VISIBLE" %></h2>
+		<% } %>
+
+		<% if (it.dbdata !== undefined) { %>
+		<ul>
+			<% it.dbdata.forEach(function(obj){ %>
+			<li><%= JSON.stringify(obj) %></li>
+			<% }) %>
+		</ul>
+		<% } else { %>
+		<h2><%= "NO DB DATA" %></h2>
+		<% } %>
+
+
+		
+
+	</body>
+</html>
